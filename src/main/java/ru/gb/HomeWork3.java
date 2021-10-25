@@ -71,13 +71,14 @@ public class HomeWork3 {
     //6. * Задать одномерный массив и найти в нем минимальный и максимальный элементы ;
     public static void arrayMinMax(int number){
         int[] array = new int[number];
-        int min;
-        int max;
-            min = array[0];
-            max = array.length-1;
-            System.out.println("Минимальное значение - "+ min);
-            System.out.println("Максимальное значение - "+ max);
-
+        int max = array[0];
+        int min = array[0] ;
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > max) max = array[i];
+            if (array[i] < min) min = array[i];
+        }
+        System.out.println("Минимальное значение - " + min);
+        System.out.println("Максимальное значение - " + max);
     }
     //7. ** Написать метод, в который передается не пустой одномерный целочисленный массив,
     // метод должен вернуть true, если в массиве есть место, в котором сумма левой и правой части массива равны.
