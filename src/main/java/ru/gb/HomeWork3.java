@@ -9,6 +9,8 @@ public class HomeWork3 {
      arrayDln(5,7);
      arrayMinMax(10);
      checkbalance(11);
+     int[] array = {1, 2, 3, 4, 5};
+     array5(array,7);
     }
     //Задать целочисленный массив, состоящий из элементов 0 и 1. Например: [ 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 ].
     // С помощью цикла и условия заменить 0 на 1, 1 на 0;
@@ -105,18 +107,28 @@ public class HomeWork3 {
     // Для усложнения задачи нельзя пользоваться вспомогательными массивами. Примеры: [ 1, 2, 3 ]
     // при n = 1 (на один вправо) -> [ 3, 1, 2 ]; [ 3, 5, 6, 1] при n = -2 (на два влево) -> [ 6, 1, 3, 5 ].
     // При каком n в какую сторону сдвиг можете выбирать сами.
-    public static void array5(){
-        int n = 3;
-        int a;
-        int[] array = {1, 3, 5, 7};
-        for (int i = 0; i < n; i++) {
-            a = i + 1;
-            for (int j = 0; j < array.length; j++) {
-              array[j] = array.length-1;
+    public static void array5(int[] array, int position) {
+        if (position > 0) {
+            for (int i = 0; i < position; i++) {
+                int n = array[array.length - 1];
+
+                for (int j = array.length - 1; j > 0; j--) {
+                    array[j] = array[j - 1];
+                }
+
+                array[0] = n;
             }
+        } else {
+            for (int i = 0; i > position; i--) {
+                int n = array[0];
 
+                for (int j = 1; j < array.length; j++) {
+                    array[j - 1] = array[j];
+                }
+
+                array[array.length - 1] = n;
+            }
         }
-
     }
 
 }
