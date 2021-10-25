@@ -8,7 +8,7 @@ public class HomeWork3 {
      doubleArray();
      arrayDln(5,7);
      arrayMinMax(10);
-     checkbalance(11);
+     checkbalance(12);
     }
     //Задать целочисленный массив, состоящий из элементов 0 и 1. Например: [ 1, 1, 0, 0, 1, 0, 1, 1, 0, 0 ].
     // С помощью цикла и условия заменить 0 на 1, 1 на 0;
