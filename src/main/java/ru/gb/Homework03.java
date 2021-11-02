@@ -111,21 +111,17 @@ public class Homework03 {
         if (position > 0) {
             for (int i = 0; i < position; i++) {
                 int n = array[array.length - 1];
-
                 for (int j = array.length - 1; j > 0; j--) {
                     array[j] = array[j - 1];
                 }
-
                 array[0] = n;
             }
         } else {
             for (int i = 0; i > position; i--) {
                 int n = array[0];
-
                 for (int j = 1; j < array.length; j++) {
                     array[j - 1] = array[j];
                 }
-
                 array[array.length - 1] = n;
             }
         }
