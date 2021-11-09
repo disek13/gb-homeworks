@@ -35,7 +35,7 @@ public class Persons {
         persArray[2] = new Persons("Сидоров Олег Сергеевич","Директор", "ivanov@mail.ru", "8901001001", 250000.00, 50);
         persArray[3] = new Persons("Губанов Петр Вячеславович","Бухгалтер", "ivanov@mail.ru", "8901001001", 180000.00, 32);
         persArray[4] = new Persons("Ильин Николай Андреевич","Экономист", "ivanov@mail.ru", "8901001001", 55000.00, 28);
-
+        //
         for (int i = 0; i < persArray.length; i++) {
             if (persArray[i].age > 40) {
                 System.out.println("Сотрудник которому больше 40 лет:");
