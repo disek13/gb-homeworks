@@ -42,7 +42,7 @@ public class employee {
 
         for (int i = 0; i < persArray.length; i++) {
             if (persArray[i].age > 40) {
-                System.out.printf("ФИО: %s, должность: %s, e-mail: %s, телефон: %s, з/п: %f, возраст: %d%n", persArray[i].fio, persArray[i].posithion, persArray[i].email, persArray[i].phone, persArray[i].salary, persArray[i].age);
+                System.out.printf("ФИО: %s, должность: %s, e-mail: %s, телефон: %s, з/п: %.2f, возраст: %d%n", persArray[i].fio, persArray[i].posithion, persArray[i].email, persArray[i].phone, persArray[i].salary, persArray[i].age);
                 System.out.println("");
             }
 
