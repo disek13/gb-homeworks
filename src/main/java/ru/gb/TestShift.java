@@ -2,7 +2,7 @@ package ru.gb;
 
 import java.util.Arrays;
 
-public class HomeWork5 {
+public class TestShift {
     public static void main(String[] args) {
 
         int[] a = shiftArray(new int[] {1, 2, 3, 4, 5}, 3);
@@ -27,3 +27,4 @@ public class HomeWork5 {
 
     }
 }
+
